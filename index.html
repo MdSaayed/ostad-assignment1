@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Airfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <div class="container mx-auto py-2 bg-white px-2">
+            <nav>
+                <ul
+                    class="desktop-menu flex justify-between  items-center font-inter hidden sm:hidden md:hidden lg:flex">
+                    <li class="nav-menu flex gap-4 items-center">
+                        <a href="">
+                            <img src="./assets/img/airfolio.png"
+                                 alt="">
+                        </a>
+                        <a href="">About Us</a>
+                        <a href="">Services</a>
+                        <a href="">Portfolio</a>
+                        <a href="">Pages</a>
+                        <a href="">Cart(0)</a>
+                    </li>
+                    <li>
+                        <button
+                                class="bg-[#078d84] px-6 py-4 text-white rounded hover:bg-transparent border hover:border-[#078d84] hover:text-[#078d84]">Hire
+                            Me</button>
+                    </li>
+                </ul>
+                <ul class="mobile-menu lg:hidden md:visible flex justify-between items-center">
+                    <li>
+                        <a href="">
+                            <img src="./assets/img/airfolio.png"
+                                 alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bars"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- hero section start -->
+    <section id="hero"
+             class="bg-[#F6F8FF] pt-20">
+        <div class="container mx-auto px-2">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex flex-col justify-center mb-20">
+                    <span class="leading-relaxed text-base md:text-lg mb-2 text-[#1C1C57]">Hi there,My name is
+                        Sayed</span>
+                    <h1
+                        class="text-3xl md:text-5xl lg:text-6xl font-medium text-[#1C1C57] md:leading-[52px] lg:leading-[62px]">
+                        Showcase Your Work<br /> with Airfolio's<br /> Creative Solutions</h1>
+                    <p class="text-[#3E3E70] my-6">Create stunning portfolios and websites with Airfolio's UI/UX design
+                        and Webflow development services.</p>
+                    <div class="flex gap-4">
+                        <button
+                                class="bg-[#078d84] px-6 py-4 text-white text-base md:text-lg rounded-lg hover:bg-transparent border hover:border-[#078d84] hover:text-[#078d84]  transition-colors duration-300">
+                            Hire Me </button>
+                        <button
+                                class="bg-transparent hover:bg-[#078d84] px-6 py-4 hover:text-white text-base md:text-lg rounded-lg border  border-[#078d84] text-[#078d84]  transition-colors duration-300">
+                            Portfolio </button>
+                    </div>
+                </div>
+                <div class="flex sm:justify-center md:justify-center lg:justify-end">
+                    <img class="w-[100%]"
+                         src="./assets//img/hero.png"
+                         alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section end -->
+    <!-- brand start-->
+    <section id="brand"
+             class="bg-[#3E3E70] py-20">
+        <div class="container mx-auto px-2">
+            <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-16 items-center">
+                <div>
+                    <h2 class="text-white text-2xl font-bold">Trusted by top companies worldwide</h2>
+                </div>
+                <div class="col-span-2">
+                    <div id="brand-logo"
+                         class="grid grid-cols-3 md:grid-cols-4 gap-4 items-center">
+                        <img src="./assets/img/Terra1.png"
+                             alt="">
+                        <img src="./assets/img/GenZ.png"
+                             alt="">
+                        <img src="./assets/img/webflow.png"
+                             alt="">
+                        <img src="./assets/img/LinkedIn.png"
+                             alt="">
+                        <img src="./assets/img/Trace2.png"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- brand end -->
+    <!-- services start -->
+    <section id="services"
+             class="bg-[#F6F8FF]">
+        <div class="container mx-auto px-2 py-20">
+            <div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 justify-between items-start">
+                    <div class="services-heading">
+                        <span class="mb-6 block font-medium">Our Services</span>
+                        <h2 class="text-[#1C1C57] text-4xl font-medium leading-16">Take a look at the variety of<br />
+                            services I offer.</h2>
+                    </div>
+                    <div class="services-desc">
+                        <p class="text-[#3E3E70]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+                            interdum nulla, ut commodo diam libero </p>
+                    </div>
+                </div>
+                <div id="service-cards"
+                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+                    <!-- service card -->
+                    <div class="card shadow-md hover:shadow-lg px-4 py-6 bg-white rounded-lg">
+                        <div>
+                            <img class="p-4 w-[80px]  h-[80px] shadow rounded-lg"
+                                 src="./assets/img/service4.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="text-black  my-4 text-2xl font-medium">UIUX Design</h2>
+                            <p class="text-[#3E3E70]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </div>
+                    <!-- service card -->
+                    <div class="card shadow-md hover:shadow-lg px-4 py-6 bg-white rounded-lg">
+                        <div>
+                            <img class="p-4 w-[80px]  h-[80px] shadow rounded-lg"
+                                 src="./assets/img/service3.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="text-black  my-4 text-2xl font-medium">Webflow devlopment</h2>
+                            <p class="text-[#3E3E70]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </div>
+                    <!-- service card -->
+                    <div class="card shadow-md hover:shadow-lg px-4 py-6 bg-white rounded-lg">
+                        <div>
+                            <img class="p-4 w-[80px]  h-[80px] shadow rounded-lg"
+                                 src="./assets/img/service2.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="text-black  my-4 text-2xl font-medium">UIUX Design</h2>
+                            <p class="text-[#3E3E70]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </div>
+                    <!-- service card -->
+                    <div class="card shadow-md hover:shadow-lg px-4 py-6 bg-white rounded-lg">
+                        <div>
+                            <img class="p-4 w-[80px] h-[80px] shadow rounded-lg"
+                                 src="./assets/img/service1.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="text-black  my-4 text-2xl font-medium">UIUX Design</h2>
+                            <p class="text-[#3E3E70]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mt-12 gap-4">
+                    <button
+                            class="bg-[#078d84] px-6 py-4 text-white text-base md:text-lg rounded-lg hover:bg-transparent border hover:border-[#078d84] hover:text-[#078d84]  transition-colors duration-300">
+                        Hire Me </button>
+                    <button
+                            class="bg-transparent hover:bg-[#078d84] px-6 py-4 hover:text-white text-base md:text-lg rounded-lg border  border-[#078d84] text-[#078d84]  transition-colors duration-300">
+                        Portfolio </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services end -->
+    <!-- about start -->
+    <section id="about">
+        <div class="container px-2 mx-auto py-20 overflow-hidden md:overflow-visible lg:overflow-visible">
+            <div class="grid grid-col-1 lg:grid-cols-2 items-center gap-20">
+                <div class="relative">
+                    <img class="w-full z-10"
+                         src="./assets/img/placehoder.png"
+                         alt="">
+                    <img class="absolute w-[70px] h-[70px] md:w-[100px] md:h-[100px]  -top-8 -right-8 object-contain"
+                         src="./assets/img/circle1.png"
+                         alt=""
+                         style="z-index: -1;">
+                    <img class="absolute w-[70px] h-[70px] md:w-[100px] md:h-[100px]  -bottom-8 object-contain -left-8"
+                         src="./assets/img/circle2.png"
+                         alt=""
+                         style="z-index: -1;">
+                </div>
+                <div class="flex flex-col gap-6">
+                    <span class="block font-medium">About me</span>
+                    <h2 class="text-[#1C1C57] text-4xl font-medium leading-16">Who is responsible for all of this
+                        impressive effort?</h2>
+                    <p class="text-[#3E3E70]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+                        interdum nulla, ut commodo diam libero </p>
+                    <div class="grid grid-cols-3 mt-2 gap-4 md:gap-6 lg:gap-8">
+                        <div class="shadow p-2 rounded-md">
+                            <span class="font-medium text-4xl">100+</span><br />
+                            <span>Project completed</span>
+                        </div>
+                        <div class="shadow p-2 rounded-md">
+                            <span class="font-medium text-4xl">98%</span><br />
+                            <span>Client satisfied </span>
+                        </div>
+                        <div class="shadow p-2 rounded-md">
+                            <span class="font-medium text-4xl">80+</span><br />
+                            <span>Design Project</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button
+                                class="bg-[#078d84] px-6 py-4 text-white text-base md:text-lg rounded-lg hover:bg-transparent border hover:border-[#078d84] hover:text-[#078d84]  transition-colors duration-300  transition-colors duration-300">
+                            About me </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
+    <!-- testimonial start -->
+    <section id="testimonial"
+             class="bg-[#255BF9]">
+        <div class="container  px-2 mx-auto py-20">
+            <div class="max-w-[768px] mx-auto">
+                <div class="flex flex-col items-center justify-center text-white">
+                    <img src="./assets/img/star.png"
+                         alt="">
+                    <p class="text-center mt-6">Airfolio has been instrumental in showcasing my design portfolio. Their
+                        UIUX design services are top-notch and their Webflow development has taken my website to the
+                        next level.</p>
+                </div>
+                <div class="flex gap-4 items-center justify-center text-white mt-6">
+                    <div>
+                        <img src="./assets/img/Avatar.png"
+                             alt="">
+                    </div>
+                    <div class="flex gap-4 items-center justify-between">
+                        <div class="border-r pr-2 md:pr-4 lg:pr-4 border-black ">
+                            <h4 class="font-medium">John Doe</h4>
+                            <p class="text-sm">Graphic Designer, ABC Company</p>
+                        </div>
+                        <div class=" pl-2 md:pl-2">
+                            <img src="./assets/img/webflow.png"
+                                 alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial end -->
+    <!-- call to action start -->
+     <section id="call-to-action" class="bg-[#1C1C57] relative">
+        <div class="container mx-auto px-2 py-20">
+            <div class="relative py-6 z-10">
+                <div class="max-w-[768px] mx-auto">
+                    <div class="flex flex-col items-center" >
+                        <h2 class="text-white text-4xl font-medium leading-16" style="z-index: 42;">Grow your business with AirWave</h2>
+                        <p class="text-white my-6">Discover the power of AirWave's marketing services and start earning
+                            today. </p>
+                    </div>
+                    <div class="flex items-center justify-center gap-4 mt-6">
+                        <button class="hover:bg-[#1C1C57] text-[#1C1C57] px-6 py-4 text-base md:text-lg rounded-lg border border-white bg-white hover:text-white hover:border-white transition-colors duration-300">
+                            Hire Me
+                        </button>
+                        <button class="bg-[#1C1C57] text-white px-6 py-4 text-base md:text-lg rounded-lg border border-white hover:bg-white hover:text-[#1C1C57] hover:border-[#1C1C57] transition-colors duration-300">
+                            Portfolio
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-imgs z-0">
+                    <img class="absolute left-0 top-0 z-10" src="./assets/img/line.png" alt="">
+                    <img class="absolute right-0 -top-10 z-10" src="./assets/img/draw2.png" alt="">
+                    <img class="absolute left-20 -bottom-20 z-1" src="./assets/img/circle3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <img class="absolute right-0 bottom-0 z-0" src="./assets/img/draw.png" alt="">
+    </section>
+    <!-- call to action end -->
+</body>
+</html>
