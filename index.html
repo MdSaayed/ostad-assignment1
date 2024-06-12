@@ -11,6 +11,11 @@
           integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
           crossorigin="anonymous"
           referrerpolicy="no-referrer" />
+    <!-- swiper css -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+          href="style.css">
 </head>
 <body>
     <!-- header start -->
@@ -242,65 +247,121 @@
     </section>
     <!-- about end -->
     <!-- testimonial start -->
-    <section id="testimonial"
-             class="bg-[#255BF9]">
-        <div class="container  px-2 mx-auto py-20">
-            <div class="max-w-[768px] mx-auto">
-                <div class="flex flex-col items-center justify-center text-white">
-                    <img src="./assets/img/star.png"
-                         alt="">
-                    <p class="text-center mt-6">Airfolio has been instrumental in showcasing my design portfolio. Their
-                        UIUX design services are top-notch and their Webflow development has taken my website to the
-                        next level.</p>
-                </div>
-                <div class="flex gap-4 items-center justify-center text-white mt-6">
-                    <div>
-                        <img src="./assets/img/Avatar.png"
-                             alt="">
+   <section id="testimonial" class="bg-[#255BF9]">
+    <div class="container px-2 mx-auto py-20 relative">
+        <div class="swiper mySwiper max-w-[768px]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-center text-white">
+                        <img src="./assets/img/star.png" alt="">
+                        <p class="text-center mt-6">Airfolio has been instrumental in showcasing my design portfolio. Their UIUX design services are top-notch and their Webflow development has taken my website to the next level.</p>
                     </div>
-                    <div class="flex gap-4 items-center justify-between">
-                        <div class="border-r pr-2 md:pr-4 lg:pr-4 border-black ">
-                            <h4 class="font-medium">John Doe</h4>
-                            <p class="text-sm">Graphic Designer, ABC Company</p>
+                    <div class="flex gap-4 items-center justify-center text-white mt-6">
+                        <div>
+                            <img src="./assets/img/Avatar.png" alt="">
                         </div>
-                        <div class=" pl-2 md:pl-2">
-                            <img src="./assets/img/webflow.png"
-                                 alt="">
+                        <div class="flex gap-4 items-center justify-between">
+                            <div class="border-r pr-2 md:pr-4 lg:pr-4 border-black">
+                                <h4 class="font-medium">John Doe</h4>
+                                <p class="text-sm">Graphic Designer, ABC Company</p>
+                            </div>
+                            <div class="pl-2 md:pl-2">
+                                <img src="./assets/img/webflow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-center text-white">
+                        <img src="./assets/img/star.png" alt="">
+                        <p class="text-center mt-6">Airfolio has been instrumental in showcasing my design portfolio. Their UIUX design services are top-notch and their Webflow development has taken my website to the next level.</p>
+                    </div>
+                    <div class="flex gap-4 items-center justify-center text-white mt-6">
+                        <div>
+                            <img src="./assets/img/Avatar.png" alt="">
+                        </div>
+                        <div class="flex gap-4 items-center justify-between">
+                            <div class="border-r pr-2 md:pr-4 lg:pr-4 border-black">
+                                <h4 class="font-medium">John Doe</h4>
+                                <p class="text-sm">Graphic Designer, ABC Company</p>
+                            </div>
+                            <div class="pl-2 md:pl-2">
+                                <img src="./assets/img/webflow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-center text-white">
+                        <img src="./assets/img/star.png" alt="">
+                        <p class="text-center mt-6">Airfolio has been instrumental in showcasing my design portfolio. Their UIUX design services are top-notch and their Webflow development has taken my website to the next level.</p>
+                    </div>
+                    <div class="flex gap-4 items-center justify-center text-white mt-6">
+                        <div>
+                            <img src="./assets/img/Avatar.png" alt="">
+                        </div>
+                        <div class="flex gap-4 items-center justify-between">
+                            <div class="border-r pr-2 md:pr-4 lg:pr-4 border-black">
+                                <h4 class="font-medium">John Doe</h4>
+                                <p class="text-sm">Graphic Designer, ABC Company</p>
+                            </div>
+                            <div class="pl-2 md:pl-2">
+                                <img src="./assets/img/webflow.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
-    </section>
+        <div class="custom-swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+        <div class="custom-swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+    </div>
+</section>
+
+
     <!-- testimonial end -->
     <!-- call to action start -->
-     <section id="call-to-action" class="bg-[#1C1C57] relative">
+    <section id="call-to-action"
+             class="bg-[#1C1C57] relative">
         <div class="container mx-auto px-2 py-20">
             <div class="relative py-6 z-10">
                 <div class="max-w-[768px] mx-auto">
-                    <div class="flex flex-col items-center" >
-                        <h2 class="text-white text-4xl font-medium leading-16" style="z-index: 42;">Grow your business with AirWave</h2>
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-white text-4xl font-medium leading-16"
+                            style="z-index: 42;">Grow your business with AirWave</h2>
                         <p class="text-white my-6">Discover the power of AirWave's marketing services and start earning
                             today. </p>
                     </div>
                     <div class="flex items-center justify-center gap-4 mt-6">
-                        <button class="hover:bg-[#1C1C57] text-[#1C1C57] px-6 py-4 text-base md:text-lg rounded-lg border border-white bg-white hover:text-white hover:border-white transition-colors duration-300">
-                            Hire Me
-                        </button>
-                        <button class="bg-[#1C1C57] text-white px-6 py-4 text-base md:text-lg rounded-lg border border-white hover:bg-white hover:text-[#1C1C57] hover:border-[#1C1C57] transition-colors duration-300">
-                            Portfolio
-                        </button>
+                        <button
+                                class="hover:bg-[#1C1C57] text-[#1C1C57] px-6 py-4 text-base md:text-lg rounded-lg border border-white bg-white hover:text-white hover:border-white transition-colors duration-300">
+                            Hire Me </button>
+                        <button
+                                class="bg-[#1C1C57] text-white px-6 py-4 text-base md:text-lg rounded-lg border border-white hover:bg-white hover:text-[#1C1C57] hover:border-[#1C1C57] transition-colors duration-300">
+                            Portfolio </button>
                     </div>
                 </div>
                 <div class="bg-imgs z-0">
-                    <img class="absolute left-0 top-0 z-10" src="./assets/img/line.png" alt="">
-                    <img class="absolute right-0 -top-10 z-10" src="./assets/img/draw2.png" alt="">
-                    <img class="absolute left-20 -bottom-20 z-1" src="./assets/img/circle3.png" alt="">
+                    <img class="absolute left-0 top-0 z-10"
+                         src="./assets/img/line.png"
+                         alt="">
+                    <img class="absolute right-0 -top-10 z-10"
+                         src="./assets/img/draw2.png"
+                         alt="">
+                    <img class="absolute left-20 -bottom-20 z-1"
+                         src="./assets/img/circle3.png"
+                         alt="">
                 </div>
             </div>
         </div>
-        <img class="absolute right-0 bottom-0 z-0" src="./assets/img/draw.png" alt="">
+        <img class="absolute right-0 bottom-0 z-0"
+             src="./assets/img/draw.png"
+             alt="">
     </section>
     <!-- call to action end -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./script.js"></script>
 </body>
 </html>
