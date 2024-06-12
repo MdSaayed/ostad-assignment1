@@ -51,35 +51,52 @@ body {
     width: 786px !important;
 }
 
-.swiper-button-next, .swiper-button-prev {
-    display: none; /* Hide default Swiper buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+    /* Hide default Swiper buttons */
 }
 
-.custom-swiper-button-next, .custom-swiper-button-prev {
+.custom-swiper-button-next,
+.custom-swiper-button-prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    color: white;
+    color: #1C1C57;
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 17px !important;
     font-size: 24px;
     cursor: pointer;
 }
 
 .custom-swiper-button-next {
-    right: 0px; /* Adjust as needed */
+    right: 0px;
+    /* Adjust as needed */
 }
 
 .custom-swiper-button-prev {
-    left: 0px; /* Adjust as needed */
+    left: 0px;
+    /* Adjust as needed */
 }
 
-.custom-swiper-button-next.disabled, .custom-swiper-button-prev.disabled {
-    opacity: 0.5;
+.custom-swiper-button-next.disabled,
+.custom-swiper-button-prev.disabled {
     pointer-events: none;
+    color: #fff;
+    background-color: #9DB5FC;
 }
 
 @media (max-width: 678px) {
-    .custom-swiper-button-next, .custom-swiper-button-prev {
+
+    .custom-swiper-button-next,
+    .custom-swiper-button-prev {
         display: none;
     }
 }
