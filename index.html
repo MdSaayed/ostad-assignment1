@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- header start -->
-    <header>
+    <header class="relative">
         <div class="container mx-auto py-2 bg-white px-4">
             <nav>
                 <ul
@@ -43,14 +43,24 @@
                 </ul>
                 <ul class="mobile-menu lg:hidden md:visible flex justify-between items-center">
                     <li>
-                        <a href="">
+                        <a href="#">
                             <img src="./assets/img/airfolio.png"
                                  alt="">
                         </a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-bars"></i>
+                        <i id="menuIcon"
+                           class="fa-solid fa-bars menu-icon"></i>
                     </li>
+                    <ul id="dropdownMenu"
+                        class="dropdownMenu hidden absolute top-0 right-0 h-[100vh] w-full bg-white flex flex-col items-center justify-center gap-4">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="close-menu absolute top-[12px] right-0 px-4"><i class="fa-solid fa-xmark"></i></li>
+                    </ul>
                 </ul>
             </nav>
         </div>
@@ -256,18 +266,19 @@
                         <div class="flex flex-col items-center justify-center text-white">
                             <img src="./assets/img/star.png"
                                  alt="">
-                            <p class="text-center mt-6">Airfolio has been instrumental in showcasing my design
-                                portfolio. Their UIUX design services are top-notch and their Webflow development has
-                                taken my website to the next level.</p>
+                            <p class="text-center mt-6">Your React portfolio is a marvel. Stunning design, seamless
+                                navigation, and engaging content. It's a testament to your skill and dedication. A true
+                                standout in the web development landscape.</p>
                         </div>
                         <div class="flex gap-4 items-center justify-center text-white mt-6">
                             <div>
-                                <img src="./assets/img/Avatar.png"
+                                <img class="rounded-full"
+                                     src="./assets/img/Avatar.png"
                                      alt="">
                             </div>
                             <div class="flex gap-4 items-center justify-between">
                                 <div class="border-r pr-2 md:pr-4 lg:pr-4 border-black">
-                                    <h4 class="font-medium">John Doe</h4>
+                                    <h4 class="font-medium">John summy</h4>
                                     <p class="text-sm">Graphic Designer, ABC Company</p>
                                 </div>
                                 <div class="pl-2 md:pl-2">
@@ -281,19 +292,20 @@
                         <div class="flex flex-col items-center justify-center text-white">
                             <img src="./assets/img/star.png"
                                  alt="">
-                            <p class="text-center mt-6">Airfolio has been instrumental in showcasing my design
-                                portfolio. Their UIUX design services are top-notch and their Webflow development has
-                                taken my website to the next level.</p>
+                            <p class="text-center mt-6">Your React portfolio is impeccable. From design to
+                                functionality, it's top-notch. Smooth navigation, captivating visuals, and efficient
+                                organization. A masterclass in showcasing skills and expertise.</p>
                         </div>
                         <div class="flex gap-4 items-center justify-center text-white mt-6">
                             <div>
-                                <img src="./assets/img/Avatar.png"
+                                <img class="rounded-full"
+                                     src="./assets/img/Avater2.jpg"
                                      alt="">
                             </div>
                             <div class="flex gap-4 items-center justify-between">
                                 <div class="border-r pr-2 md:pr-4 lg:pr-4 border-black">
                                     <h4 class="font-medium">John Doe</h4>
-                                    <p class="text-sm">Graphic Designer, ABC Company</p>
+                                    <p class="text-sm">Photographer, ABC Company</p>
                                 </div>
                                 <div class="pl-2 md:pl-2">
                                     <img src="./assets/img/webflow.png"
@@ -306,19 +318,20 @@
                         <div class="flex flex-col items-center justify-center text-white">
                             <img src="./assets/img/star.png"
                                  alt="">
-                            <p class="text-center mt-6">Airfolio has been instrumental in showcasing my design
-                                portfolio. Their UIUX design services are top-notch and their Webflow development has
-                                taken my website to the next level.</p>
+                            <p class="text-center mt-6">Your React portfolio is exceptional. The design is captivating,
+                                the functionality flawless. Navigating through projects is effortless, and the user
+                                experience is outstanding. A testament to your talent.</p>
                         </div>
                         <div class="flex gap-4 items-center justify-center text-white mt-6">
                             <div>
-                                <img src="./assets/img/Avatar.png"
+                                <img class="rounded-full"
+                                     src="./assets/img/Avatar.png"
                                      alt="">
                             </div>
                             <div class="flex gap-4 items-center justify-between">
                                 <div class="border-r pr-2 md:pr-4 lg:pr-4 border-black">
-                                    <h4 class="font-medium">John Doe</h4>
-                                    <p class="text-sm">Graphic Designer, ABC Company</p>
+                                    <h4 class="font-medium">Jack</h4>
+                                    <p class="text-sm">Developer, ABC Company</p>
                                 </div>
                                 <div class="pl-2 md:pl-2">
                                     <img src="./assets/img/webflow.png"
@@ -411,7 +424,7 @@
                         </div>
                     </div>
                     <div class="text-white">
-                        <h3 class="font-semibold mb-6">QUik links</h3>
+                        <h3 class="font-semibold mb-6">Quik links</h3>
                         <div class="links flex flex-col gap-4 text-sm">
                             <a href="">Shop</a>
                             <a href="">Product Single</a>

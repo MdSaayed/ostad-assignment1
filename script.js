@@ -37,3 +37,53 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+// menu
+
+document.addEventListener("DOMContentLoaded", function () {
+    var menuIcon = document.getElementById("menuIcon");
+    var closeMenuButton = document.querySelector(".close-menu");
+    var dropdownMenu = document.getElementById("dropdownMenu");
+
+    // Function to disable body scrolling
+    function disableBodyScroll() {
+        document.body.style.overflow = "hidden";
+    }
+
+    // Function to enable body scrolling
+    function enableBodyScroll() {
+        document.body.style.overflow = "";
+    }
+
+    // Toggle dropdown menu visibility when menu icon is clicked
+    menuIcon.addEventListener("click", function () {
+        dropdownMenu.classList.toggle("hidden");
+        if (!dropdownMenu.classList.contains("hidden")) {
+            disableBodyScroll();
+        } else {
+            enableBodyScroll();
+        }
+    });
+
+    // Close dropdown menu when close-menu button is clicked
+    closeMenuButton.addEventListener("click", function () {
+        dropdownMenu.classList.add("hidden");
+        enableBodyScroll();
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
