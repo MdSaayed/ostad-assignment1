@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
+    // navigation swiper
     function updateNavigationButtons(swiper) {
         const prevButton = document.querySelector('.custom-swiper-button-prev');
         const nextButton = document.querySelector('.custom-swiper-button-next');
