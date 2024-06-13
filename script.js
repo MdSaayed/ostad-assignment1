@@ -73,10 +73,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// FAQs
+function toggleAnswer(id, icon) {
+    const answer = document.getElementById(id);
+    if (answer.classList.contains('max-h-0')) {
+        // Expand the answer
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.classList.remove('max-h-0');
+    } else {
+        // Collapse the answer
+        answer.style.maxHeight = '0';
+        answer.classList.add('max-h-0');
+    }
 
-
-
-
+    // Toggle icon rotation and icon type
+    icon.classList.toggle('rotate-90');
+    icon.classList.toggle('fa-plus');
+    icon.classList.toggle('fa-times');
+}
 
 
 
