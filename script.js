@@ -60,8 +60,10 @@ document.addEventListener("DOMContentLoaded", function () {
     menuIcon.addEventListener("click", function () {
         dropdownMenu.classList.toggle("hidden");
         if (!dropdownMenu.classList.contains("hidden")) {
+            dropdownMenu.classList.add("animate-fadeInScale");
             disableBodyScroll();
         } else {
+            dropdownMenu.classList.remove("animate-fadeInScale");
             enableBodyScroll();
         }
     });
@@ -69,9 +71,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Close dropdown menu when close-menu button is clicked
     closeMenuButton.addEventListener("click", function () {
         dropdownMenu.classList.add("hidden");
+        dropdownMenu.classList.remove("animate-fadeInScale");
         enableBodyScroll();
     });
 });
+
 
 
 // FAQs
